@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+<style>
+  * {
+    box-sizing : border-box;
+  }
+
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background : #faf6f3;
+  }
+  /* Header/Blog Title */
+  .header {
+    padding : 30px;
+    text-align: center;
+    background : white;
+  }
+
+  .header h1{
+   font-size: 50px;
+  }
+
+  /* Style the top navigation bar*/
+  .topnav {
+    overflow: hidden; /*visible,scroll,auto*/
+    background-color: #f8ebe3;
+  }
+
+/*Style the topnav Links */
+
+.topnav a{
+   float : left;
+   display: block;
+   color: #000000;
+   text-align: center;
+   padding :14px 16px;
+   text-decoration : none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color : #ddd;
+  color: black;
+}
+/* Create tow unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width : 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width 25%;
+  background-color : #faf6f3;
+  padding-left: 20px;
+}
+/* Fake image */
+.fakeimg {
+  background-color: #ffffff;
+  width : 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding : 20px;
+  margin-top: 20px;
+
+}
+
+/* Clear floats after the columns :컬럼다음에 float 해제*/
+.row:after { /*begore*/
+  content:""; /*row 다음에 content "" 안에 있는 내용을 입력하시오.*/
+  display: table;
+  clear: both;
+}
+.footer {
+  padding:20px;
+  text-align : center;
+  background: #f8ebe3;
+  margin-top: 20px;
+}
+
+/* Responsive Layout - when the screen is less than 800px wide,
+make the two columns stack on top of each ohter inteadof next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+/* Responsive Layout - when the screen is Less than 400px wide,
+make the navigation Links stack on top of eacj other instead of next to each other */
+@media screen and (max-width : 400px;){
+  .topnav a{
+    float: none;
+    width:100%;
+  }
+}
+</style>
+
+
+  <body>
+    <div class="header">
+    <h1> SY DESIGN </h1>
+
+    </div>
+
+<div class="topnav">
+ <a href="index.html"> DESIGN 1 </a>
+ <a href="index2.html"> DESIGN 2 </a>
+ <a href="index3.html"> ETC </a>
+ <a href="index.html" style="float:right"> Main </a>
+</div>
+
+
+
+
+<div class=" row">
+ <div class="leftcolumn">
+   <div class="card">
+     <h2> 사진_공간 </H2>
+     <h5> 한적한 분위기 </h5>
+       <div class="fakeimg" style="height:550px;">
+       <img src='img/etc1-1.png'></div>
+
+     <p> 평소 조용하고 한적한 분위기와 환경을 좋아한다.
+        그러한 분위기를 발견하면 이렇게 사진으로 찍어두어
+        마음이 복잡해질때 한번씩 본다.
+      </p>
+    </div>
+    <div class="card">
+      <h2> 사진_꽃</H2>
+      <h5> 길가에 꽃   </h5>
+        <div class="fakeimg" style="height:550px;">
+     <img src='img/etc1-2.png'>
+     </div>
+
+      <p>길가에 지나갈때 찍은 화단의 꽃들이다.
+      꽃에 관심이 있는 편은 아니지만 활짝 핀 꽃을
+    저장하고 싶어 찍어두었다. </p>
+      </div>
+  </div>
+
+  <div class="rightcolumn">
+   <div class="card">
+     <h2>About Me</h2>
+     <div class="fakeimg" style="height:150px;">
+         <img src='img/about.png'>
+     </div>
+
+     </div>
+    <div class="card">
+      <h3>Today picture</h3>
+      <div class="fakeimg"><p>
+        <img src='img/today.jpg' width="400" height="500"></p></div>
+      <div class="fakeimg"><p></p></div>
+      <div class="fakeimg"><p></p></div>
+    </div>
+    <div class="card">
+       <h3>Follow Me</h3>
+       <p>instagram @ choukitess</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>susuyeon12@naver.com</h2>
+</div>
+
+</body>
+</html>
