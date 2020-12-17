@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+<style>
+  * {
+    box-sizing : border-box;
+  }
+
+  body {
+    font-family: 나눔바른고딕 bold;
+    padding: 10px;
+    background : #ffffff;
+  }
+  /* Header/Blog Title */
+  .header {
+    padding : 10px;
+    text-align: left;
+    background : white;
+  }
+
+  .header h1{
+   font-size: 40px;
+  }
+
+  /* Style the top navigation bar*/
+  .topnav {
+    overflow: hidden; /*visible,scroll,auto*/
+    background-color: #ffffff;
+  }
+
+/*Style the topnav Links */
+
+.topnav a{
+   font-size: 20px;
+   float : left;
+   display: block;
+   color: #000000;
+   text-align: center;
+   padding :12px 16px;
+   text-decoration : none;
+
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color : #f2f2f2;
+  color: black;
+}
+/* Create tow unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width : 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width 25%;
+  background-color : #ffffff;
+  padding-left: 20px;
+}
+/* Fake image */
+.fakeimg {
+  background-color: #ffffff;
+  width : 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding : 20px;
+  margin-top: 20px;
+
+}
+
+/* Clear floats after the columns :컬럼다음에 float 해제*/
+.row:after { /*begore*/
+  content:""; /*row 다음에 content "" 안에 있는 내용을 입력하시오.*/
+  display: table;
+  clear: both;
+}
+.footer {
+  padding:5px;
+  text-align : left;
+  background: #ddd;
+  margin-top: 25px;
+}
+
+/* Responsive Layout - when the screen is less than 800px wide,
+make the two columns stack on top of each ohter inteadof next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+/* Responsive Layout - when the screen is Less than 400px wide,
+make the navigation Links stack on top of eacj other instead of next to each other */
+@media screen and (max-width : 400px;){
+  .topnav a{
+    float: none;
+    width:100%;
+  }
+}
+</style>
+
+
+  <body>
+    <div class="header">
+    <h1> HWANG SU YEON</h1>
+
+    </div>
+
+<div class="topnav">
+
+ <a href="index.html"> HOME</a>
+ <a href="index2.html"> MOTION DESIGN </a>
+ <a href="index3.html"> BASIC DRAWING </a>
+<a href="index4.html"> PROGRAMING </a>
+
+   <img src='BAR.png'>
+</div>
+
+
+
+
+<div class=" row">
+ <div class="leftcolumn">
+   <div class="card">
+
+     <div class="fakeimg" style="height:900px;">
+       <video width='1500' height='800' autoplay controls loop>
+         <source src="project.mp4" type="video/mp4">
+           <source src="project.webm" type="video/webm">
+             <source src="project.ogg" type="video/ogg">
+               </video></div>
+
+    </div>
+
+  </div>
+
+  <div class="rightcolumn">
+   <div class="card">
+     <h2>MAIN HTML CODE</h2>
+     <div class="fakeimg" style="height:400px;">
+     <img src='code.png'></div>
+
+     </div>
+    <div class="card">
+
+      <div class="fakeimg"></div>
+
+    </div>
+    <div class="card">
+
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h3>email : susuyeon12@naver.com
+      tell : 010-2463-3530</h3>
+</div>
+
+</body>
+</html>
